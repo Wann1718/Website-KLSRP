@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Server Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; /* Latar belakang hitam */
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: rgba(40, 40, 40, 0.8); /* Latar belakang header dengan sedikit transparansi */
+            padding: 20px;
+            display: flex; /* Menggunakan flexbox untuk susun atur */
+            align-items: center; /* Memastikan gambar dan teks berada pada pusat secara vertikal */
+            justify-content: center; /* Pusatkan keseluruhan isi header */
+            flex-direction: column; /* Menyusun secara menegak */
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Untuk bentuk bulat */
+            margin-bottom: 10px; /* Memberi jarak antara gambar dan tajuk */
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            display: inline;
+            font-weight: bold; /* Membuat tajuk lebih tebal */
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #4CAF50;
+            text-decoration: none; /* Membuang garis bawah */
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.8s ease-in-out; /* Menjadikan peralihan lebih smooth */
+            width: 100%;
+        }
+        .slides img {
+            width: 80%; /* Memperbesar saiz gambar sedikit */
+            height: auto;
+            margin: 0 auto; /* Mengkan gambar secara pusat */
+        }
+        .indicators {
+            text-align: center;
+            margin-top: 10px; /* Memberi jarak antara slider dan penunjuk */
+        }
+        .indicator {
+            display: inline-block;
+            width: 8px; /* Saiz bulatan penunjuk */
+            height: 8px; /* Saiz bulatan penunjuk */
+            margin: 0 3px; /* Jarak antara bulatan */
+            border-radius: 50%;
+            background-color: #bbb; /* Warna latar belakang bulatan */
+            cursor: pointer; /* Tunjukkan penunjuk tangan ketika hover */
+        }
+        .active {
+            background-color: #4CAF50; /* Warna untuk bulatan aktif */
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #FFD700; /* Warna Kuning */
+            color: black; /* Warna teks */
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-family: 'Arial', sans-serif; /* Font Arial */
+            font-weight: bold; /* Tulisan tebal */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #FFC700; /* Warna kuning lebih terang ketika hover */
+        }
+        .tiktok-btn {
+            margin-top: 20px;
+            background-color: #333333; /* Warna latar belakang hitam cerah */
+            color: white; /* Warna teks putih */
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-family: 'Arial', sans-serif; /* Font Arial */
+            font-weight: bold; /* Tulisan tebal */
+            border-radius: 5px;
+        }
+        .tiktok-btn:hover {
+            background-color: #444444; /* Warna lebih cerah ketika hover */
+        }
+        .roleplay-info {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(40, 40, 40, 0.7); /* Latar belakang untuk info roleplay */
+            border-radius: 5px;
+        }
+        .question-answer {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(40, 40, 40, 0.7); /* Latar belakang untuk Q&A */
+            border-radius: 5px;
+            text-align: left; /* Membuat teks sejajar ke kiri */
+        }
+        .download-link {
+            color: #4CAF50; /* Warna hijau untuk teks download */
+            text-decoration: none; /* Membuang garis bawah */
+            cursor: pointer; /* Menunjukkan penunjuk tangan ketika hover */
+        }
+        .download-link:hover {
+            color: #ffffff; /* Warna teks lebih cerah ketika hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.imgur.com/Rwypw9h.png" alt="Server Logo"> <!-- Logo ditetapkan di sini -->
+    <h1>KL Street Roleplay</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> <!-- Menghala ke halaman utama -->
+    <a href="#">About</a>
+    <a href="https://discord.gg/xfGYEnrN" target="_blank" style="color: #4CAF50;">Join Server</a> <!-- Menghala ke Discord -->
+    <a href="#">Contact</a>
+    <a href="https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher" target="_blank" class="download-link">Download</a> <!-- Teks Download dengan pautan -->
+</nav>
+
+<div class="container">
+    <h2>Welcome to the Official KL Street Roleplay Server</h2>
+    <p>Your ultimate experience in the world of roleplaying. Join us today and start your adventure with a vibrant community of players.</p>
+    
+    <!-- Slider Section -->
+    <div class="slider">
+        <div class="slides">
+            <img src="https://i.imgur.com/Rwypw9h.png" alt="Image 1"> <!-- Gambar slide pertama -->
+            <img src="https://i.imgur.com/RDt9oUx.jpeg" alt="Image 2"> <!-- Gambar slide kedua -->
+            <img src="https://i.imgur.com/3OefqvI.jpeg" alt="Image 3"> <!-- Gambar slide ketiga -->
+        </div>
+        <div class="indicators">
+            <div class="indicator" onclick="showSlide(0)"></div>
+            <div class="indicator" onclick="showSlide(1)"></div>
+            <div class="indicator" onclick="showSlide(2)"></div>
+        </div>
+    </div>
+
+    <!-- Penerangan tentang Roleplay -->
+    <div class="roleplay-info">
+        <h3>Apa itu Roleplay?</h3>
+        <p>Roleplay (RP) adalah satu bentuk pengisahan interaktif di mana pemain mengambil peranan sebagai watak dalam persekitaran fiksyen. Peserta mencipta watak mereka, membangunkan latar belakang cerita, dan terlibat dalam senario yang didorong oleh tindakan dan keputusan watak mereka. Dalam roleplay, pemain boleh meneroka pelbagai personaliti, mengalami pengembaraan yang unik, dan bekerjasama dengan orang lain untuk mencipta naratif bersama. Ia menggalakkan kreativiti, interaksi sosial, dan keupayaan berfikir secara kritikal dalam konteks permainan.</p>
+    </div>
+
+    <!-- Tajuk Q&A -->
+    <div class="question-answer">
+        <h3>QUESTION AND ANSWER</h3>
+        <p><strong>Question:</strong> Macam mana nak masuk server KL street roleplay?</p>
+        <p><strong>Answer:</strong> Join discord kami dan daftar untuk mendapatkan akaun UCP (WHITELIST).</p>
+        <p><strong>Question:</strong> Macam mana nak main guna Android?</p>
+        <p><strong>Answer:</strong> Tekan <span class="download-link">"download"</span> untuk download di Android.</p> <!-- Teks Download sebagai teks yang boleh ditekan -->
+    </div>
+
+    <a href="https://discord.gg/xfGYEnrN" class="btn" target="_blank">Join Now</a> <!-- Pautan ke Discord -->
+    
+    <!-- Button to TikTok -->
+    <a href="https://www.tiktok.com/@your_tiktok_username" class="btn tiktok-btn" target="_blank">Follow us on TikTok</a>
+</div>
+
+<script>
+    let currentIndex = 0; // Menyimpan indeks gambar semasa
+    const slides = document.querySelector('.slides');
+    const indicators = document.query</script></body></html>
